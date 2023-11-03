@@ -65,6 +65,7 @@ body .container .logInCreateAccount .tags .formCreateAccount .tag {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  z-index: 9;
 }
 body .container .logInCreateAccount .tags .formCreateAccount .tag .tagCreateAccount {
   font-size: 0.8rem;
@@ -107,6 +108,7 @@ body .container .logInCreateAccount .tags .formLogIn .tag {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  z-index: 9;
 }
 body .container .logInCreateAccount .tags .formLogIn .tag .tagLogIn {
   font-size: 0.8rem;
@@ -307,6 +309,174 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
   0% {
     filter: grayscale(0%);
   }
+}
+
+.headerSignIn {
+  width: 20vw;
+  height: 100vh;
+}
+.headerSignIn label .drawerIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 10;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #000000;
+  transition: transform 0.3s ease-in-out;
+  animation: drawer 2s linear infinite;
+}
+.headerSignIn label .drawerIcon:hover {
+  transform: translateY(0%) scale(105%);
+  filter: drop-shadow(0 0 6px #BC2327);
+}
+@keyframes drawer {
+  0% {
+    filter: drop-shadow(0 0 2px #BC2327);
+    transform: scale(100%);
+  }
+  100% {
+    filter: drop-shadow(0 0 6px #BC2327);
+    transform: scale(103%);
+  }
+}
+.headerSignIn #menuSide {
+  display: flex;
+}
+.headerSignIn #menuSide:checked ~ .menuSide {
+  transform: translate(-225%);
+}
+.headerSignIn .menuSide {
+  width: 20vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 125%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #141414;
+  overflow: hidden;
+  box-shadow: 0 0 10px 6px #070707;
+  z-index: 10;
+  transform: translate(-105%);
+  transition: 0.3s ease-in-out;
+}
+.headerSignIn .menuSide .top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  padding: 10px 10px 10px 30px;
+}
+.headerSignIn .menuSide .top .brand {
+  width: 45px;
+  order: 2;
+}
+.headerSignIn .menuSide .top label .close {
+  width: 25px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.headerSignIn .menuSide .top label .close:hover {
+  transform: rotate(90deg);
+}
+.headerSignIn .menuSide .menu {
+  width: 100%;
+}
+.headerSignIn .menuSide .menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 0;
+}
+.headerSignIn .menuSide .menu ul li {
+  width: 100%;
+  list-style-type: none;
+  cursor: pointer;
+  background-color: #141414;
+}
+.headerSignIn .menuSide .menu ul li .link {
+  display: block;
+  width: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 100px;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.headerSignIn .menuSide .menu ul li .link:hover {
+  background-color: rgba(188, 35, 40, 0.3490196078);
+}
+.headerSignIn .menuSide .menu ul li .cartShop {
+  width: 100%;
+  cursor: pointer;
+}
+.headerSignIn .menuSide .menu ul li .cartShop .link {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0px auto 0px 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #6b6b6b;
+  transition: all 0.3s ease;
+}
+.headerSignIn .menuSide .menu ul li .cartShop .link:hover {
+  background-color: rgba(188, 35, 40, 0.3490196078);
+}
+.headerSignIn .menuSide .contactUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #181818;
+  padding-top: 10px;
+}
+.headerSignIn .menuSide .contactUs p {
+  width: 100%;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #ffffff;
+  font-weight: 600;
+  padding-left: 30px;
+  border-bottom: 1px solid #6b6b6b;
+  padding-bottom: 15px;
+}
+.headerSignIn .menuSide .contactUs ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.headerSignIn .menuSide .contactUs ul li {
+  display: block;
+  list-style-type: none;
+}
+.headerSignIn .menuSide .contactUs ul li .item {
+  text-decoration: none;
+}
+.headerSignIn .menuSide .contactUs ul li .item .itemSocial {
+  width: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */
