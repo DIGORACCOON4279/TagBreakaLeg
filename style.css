@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rubik+Distressed&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: "Rubik Distressed", cursive;
+    font-family: Jura;
+}
 .container {
     width: 100vw;
     height: auto;
@@ -11,7 +16,6 @@
 
 .container .logInCreateAccount {
     width: 100vw;
-
     display: grid;
     grid-template-columns: repeat(2, 1fraction);
     grid-template-rows: repeat(1, 1fraction);
@@ -40,15 +44,15 @@
     transform: translate(-100%);
     z-index: 10;
 }
+
 .container .logInCreateAccount .bannerCreateAccount{
     width:50%;
     height: 100%;
     position:fixed;
     top: 0;
     right:0;
-
+    background-color: #000000;
     /* background-image: linear-gradient(#bc23286e, #00000085), url(img/sunset.webp);
-
     background-repeat: no-repeat;
     background-position: 100%;
     background-attachment: fixed;
@@ -58,7 +62,6 @@
     width:100%;
     height: 100vh;
     object-fit:cover;
-
 }
 
 .container .logInCreateAccount .tags .formCreateAccount{
@@ -97,38 +100,12 @@
     z-index: 1;
 }
 
-
-.container .logInCreateAccount .tags .formLogIn .tag{
-    position: fixed;
-    top:0px;
-    right:-47px;
-    transform: rotate(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.container .logInCreateAccount .tags .formLogIn .tag .tagLogIn{
-    font-size:1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    text-align: center;
-    writing-mode: vertical-rl;
-    text-orientation: right;
-    transform: rotate(180deg);
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #000000;
-    padding: 40px 15px;
-    transition: all 0.3s ease;
-}
-
+.container .logInCreateAccount .tags .formLogIn .tag,
 .container .logInCreateAccount .tags .formCreateAccount .tag{
     position: fixed;
     /* top:136px; */
-    top:0px;
-    right:-47px;
+    top:-10px;
+    right:-45px;
     transform: rotate(180deg);
     display: flex;
     justify-content: center;
@@ -136,9 +113,10 @@
     text-decoration: none;
 }
 
+.container .logInCreateAccount .tags .formLogIn .tag .tagLogIn,
 .container .logInCreateAccount .tags .formCreateAccount .tag .tagCreateAccount{
-    font-size:1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.8rem;
+    font-family: Jura;
     color: #ffffff;
     text-align: center;
     writing-mode: vertical-rl;
@@ -147,27 +125,94 @@
     font-weight: 600;
     cursor: pointer;
     background-color: #000000;
-    padding: 40px 15px;
+    padding: 20px 15px;
     transition: all 0.3s ease;
 }
 
 .container .logInCreateAccount .tags .formLogIn legend,
 .container .logInCreateAccount .tags .formCreateAccount legend{
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #BC2327;
+    font-family: "Rubik Distressed", cursive;
+    text-align: center;
+}
+
+.container .logInCreateAccount .tags .formLogIn .formFloating,
+.container .logInCreateAccount .tags .formCreateAccount .formFloating{
+    width:50%;
+    color: #000000;
+    font-size: 0.9rem;
     font-weight: 600;
-    color: #b9b9b9;
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px auto;
+}
+
+.container .logInCreateAccount .tags .formLogIn .formFloating .formControl,
+.container .logInCreateAccount .tags .formCreateAccount .formFloating .formControl{
+    width:100%;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 10px 0px 10px 10px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn,
+.container .logInCreateAccount .tags  .formCreateAccount .ctaToCreateAccount{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap:30px;
+}
+
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn,
+.container .logInCreateAccount .tags  .formCreateAccount .ctaToCreateAccount .btnCreateAccount{
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: Jura;
+    padding: 10px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn p,
+.container .logInCreateAccount .tags  .formCreateAccount .ctaToCreateAccount p{
+    color: #2e2e2e;
+    font-size: 0.8rem;
+    font-family: Jura;
+    font-weight: 500;
+    margin-bottom:-15px;
+}
+
+.container .logInCreateAccount .tags .formLogIn .ctaToSignIn .btnSignIn:hover,
+.container .logInCreateAccount .tags  .formCreateAccount .ctaToCreateAccount .btnCreateAccount:hover{
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
 }
 
 .container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount,
-.container .logInCreateAccount .tags  .formCreateAccount label .ctaFormLogIn{
-    font-size: 1rem;
-    font-weight: 600;
+.container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn{
+    font-size: 0.8rem;
+    font-weight: 700;
     color: #2e2e2e;
-    font-family: sans-serif;
-    cursor: pointer;
+    font-family: Jura;
+    text-decoration: none;
 }
+
 .container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount:hover,
-.container .logInCreateAccount .tags  .formCreateAccount label .ctaFormLogIn:hover{
+.container .logInCreateAccount .tags .formCreateAccount label .ctaFormLogIn:hover{
     text-decoration: underline;
+    color: #BC2327;
 }
