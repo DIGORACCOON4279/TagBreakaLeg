@@ -126,8 +126,8 @@
 
 .container .logInCreateAccount .tags .formCreateAccount .tag{
     position: fixed;
-    top:136px;
-    /* top:0px; */
+    /* top:136px; */
+    top:0px;
     right:-47px;
     transform: rotate(180deg);
     display: flex;
