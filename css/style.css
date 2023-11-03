@@ -19,9 +19,6 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fraction);
     grid-template-rows: repeat(1, 1fraction);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     align-items: center;
     z-index: 9;
 }
@@ -51,11 +48,6 @@ body{
     position:fixed;
     top: 0;
     right:0;
-    /* background-image: linear-gradient(#bc23286e, #00000085), url(img/sunset.webp);
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-attachment: fixed;
-    background-size:cover; */
 }
 .container .logInCreateAccount .bannerCreateAccount .background{
     width:100%;
@@ -96,7 +88,6 @@ body{
         filter: grayscale(0%);
     }
 }
-
 .container .logInCreateAccount .tags .formCreateAccount{
     width: 50vw;
     height: 100vh;
