@@ -161,7 +161,7 @@
 
 .container .logInCreateAccount .tags .formLogIn label .ctaFormCreateAccount,
 .container .logInCreateAccount .tags  .formCreateAccount label .ctaFormLogIn{
-    font-size: rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2e2e2e;
     font-family: sans-serif;
