@@ -479,4 +479,175 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
   width: 35px;
 }
 
+#cart {
+  display: none;
+}
+#cart:checked ~ .sectionShop {
+  transform: translate(0%);
+}
+
+#cart {
+  display: none;
+}
+#cart:checked ~ .sectionShop {
+  transform: translate(0%);
+}
+
+.sectionShop {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 0 10px 6px #070707;
+  z-index: 10;
+  padding-top: 30px;
+  transform: translate(105%);
+  transition: 0.3s ease-in-out;
+}
+.sectionShop .menuCart .cartShop .closeCross {
+  width: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+.sectionShop .menuCart .cartShop .closeCross:hover {
+  transform: rotate(90deg);
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px auto;
+  padding: 0px 20px;
+  height: 380px;
+  overflow: scroll;
+  position: fixed;
+  top: 60px;
+  left: 20px;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cartlistWord {
+  width: inherit;
+  font-size: 1.3rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 0px;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .category .titleCartlist {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+  font-size: 1rem;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemProduct {
+  width: 12%;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description {
+  display: flex;
+  flex-direction: column;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .price {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #424242;
+  font-weight: 600;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .description .icons img {
+  width: 20px;
+  cursor: pointer;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .itemNumber #quantity {
+  width: 50px;
+  height: 35px;
+  padding: 2px;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+}
+.sectionShop .menuCart .menuCartlist .choiceCartlist .cart .cartlist .total {
+  font-size: 1rem;
+  font-family: Jura;
+  color: #BC2327;
+  font-weight: 600;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .outcome .shipping, .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .discount, .sectionShop .menuCart .menuCartlist .outcomeCard .outcome .total {
+  margin: 2px;
+  width: inherit;
+  font-size: 1rem;
+  font-family: Jura;
+  color: #424242;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .outcome .total {
+  color: #BC2327;
+  font-weight: 700;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 1rem;
+  font-family: Jura;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid transparent;
+  background-color: #070707;
+  transition: all 0.3s ease;
+}
+.sectionShop .menuCart .menuCartlist .outcomeCard .btnCheckout:hover {
+  color: #070707;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=main.css.map */
