@@ -316,39 +316,11 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
   height: 100vh;
   position: relative;
 }
-.headerSignIn label .drawerIcon {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  z-index: 10;
-  border-radius: 50%;
-  padding: 5px;
-  background-color: #000000;
-  transition: transform 0.3s ease-in-out;
-  animation: drawer 2s linear infinite;
-}
-.headerSignIn label .drawerIcon:hover {
-  transform: translateY(0%) scale(105%);
-  filter: drop-shadow(0 0 6px #BC2327);
-}
-@keyframes drawer {
-  0% {
-    filter: drop-shadow(0 0 2px #BC2327);
-    transform: scale(100%);
-  }
-  100% {
-    filter: drop-shadow(0 0 6px #BC2327);
-    transform: scale(103%);
-  }
-}
 .headerSignIn .menuIcons {
   width: 49.19px;
   height: auto;
   position: fixed;
-  top: 70px;
+  top: 0px;
   right: 0%;
   z-index: 1;
   animation: getoff 0.5s linear;
@@ -371,7 +343,7 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
 }
 .headerSignIn .menuIcons ul li {
   list-style-type: none;
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 .headerSignIn .menuIcons ul li .wishHeadLine .wishlistIcon, .headerSignIn .menuIcons ul li .wishHeadLine .cartIcon, .headerSignIn .menuIcons ul li .cartShop .wishlistIcon, .headerSignIn .menuIcons ul li .cartShop .cartIcon {
   cursor: pointer;
@@ -381,6 +353,12 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
 .headerSignIn .menuIcons ul li .wishHeadLine .wishlistIcon:hover, .headerSignIn .menuIcons ul li .wishHeadLine .cartIcon:hover, .headerSignIn .menuIcons ul li .cartShop .wishlistIcon:hover, .headerSignIn .menuIcons ul li .cartShop .cartIcon:hover {
   transform: scale(120%);
   filter: drop-shadow(0 0 10px #696061);
+}
+.headerSignIn .menuIcons ul li .menu {
+  position: static;
+}
+.headerSignIn .menuIcons ul li .menu .drawerIcon {
+  width: 30px;
 }
 .headerSignIn #menuSide {
   display: flex;
