@@ -340,8 +340,13 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .headerSignIn .menuIcons ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   list-style-type: none;
   padding: 10px 0px;
 }
@@ -354,12 +359,32 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
   transform: scale(120%);
   filter: drop-shadow(0 0 10px #696061);
 }
-.headerSignIn .menuIcons ul li .menu {
-  position: static;
+.headerSignIn .menuIcons ul li .menu, .headerSignIn .menuIcons ul li .wishHeadLine, .headerSignIn .menuIcons ul li .cartShop {
   cursor: pointer;
+  order: 2;
 }
-.headerSignIn .menuIcons ul li .menu .drawerIcon {
-  width: 30px;
+.headerSignIn .menuIcons ul li .menu:hover + .toolTip, .headerSignIn .menuIcons ul li .wishHeadLine:hover + .toolTip, .headerSignIn .menuIcons ul li .cartShop:hover + .toolTip {
+  opacity: 1;
+  visibility: visible;
+}
+.headerSignIn .menuIcons ul li .toolTip {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -70px;
+  background-color: rgb(153, 153, 153);
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+.headerSignIn .menuIcons ul li .toolTip .toolTipMessage {
+  margin: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Jura;
 }
 .headerSignIn #menuSide {
   display: flex;
