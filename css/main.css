@@ -314,6 +314,7 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
 .headerSignIn {
   width: 20vw;
   height: 100vh;
+  position: relative;
 }
 .headerSignIn label .drawerIcon {
   width: 40px;
@@ -344,15 +345,23 @@ body .container .logInCreateAccount .bannerCreateAccount .background {
   }
 }
 .headerSignIn .menuIcons {
+  width: 49.19px;
+  height: auto;
   position: fixed;
   top: 70px;
-  right: 18px;
+  right: 0%;
   z-index: 1;
-  transition: transform 0.3s ease-in-out;
+  animation: getoff 0.5s linear;
+}
+@keyframes getoff {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
 }
 .headerSignIn .menuIcons ul {
-  width: 45px;
-  height: auto;
   padding: 5px 0px;
   background-color: #000000;
   display: flex;
